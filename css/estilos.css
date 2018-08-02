@@ -2,6 +2,7 @@ body {
 	font-family: Indie Flower;
 }
 
+
 .container {
 	margin: 0;
 	padding: 0;
@@ -13,7 +14,6 @@ body {
 	min-width: 150px;
 	padding: 20px;
 }
-
 .c1 {
 	color: black;
 	background-color: #E6EBE0;
@@ -45,41 +45,21 @@ body {
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
 }
-@media screen and (max-width:599px) {
-	.c1, .c2, .c3, .c4, .c5{
-		width: 100%;
+.c1, .c2, .c3, .c4, .c5 {
+	width: 100%;
+}
+@media (min-width: 600px) {
+	.c1 {
+		width: 25%;
+	}
+	.c4 {
+		width: 75%;
 	}
 }
-@media screen and (min-width: 600px) {
-	.c2, .c3, .c4, .c5 {
-		width: 50%;
-	}
-	.c1{
-		width: 100%;
-	}
-}
-@media screen and (min-width: 800px) {
-	.c1, .c2 {
-		width: 100%;
-	}
-	.c3, .c4, .c5 {
-		width: 33.33%;
-	}
+@media (min-width: 800px) {
 	.container {
 		width: 800px;
 		margin-left: auto;
 		margin-right: auto;
-	}
-}
-@media screen and (min-width: 600px) {
-	.c1, .c2, .c3, .c4, .c5{
-		color: red;
-		font-size: 16px;
-	}
-}
-@media screen and (min-width: 900px) {
-	.c1, .c2, .c3, .c4, .c5{
-		color: black;
-		font-size: 14px;
 	}
 }
